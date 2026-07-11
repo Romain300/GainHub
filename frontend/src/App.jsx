@@ -1,13 +1,14 @@
 import './App.css'
-import Input from './components/Inputs'
+import LogForm from './components/LogForm'
+import SignIn from './components/SignIn'
 
 function App() {
  
 
   return (
     <>
-      <Input id='email' label='Email:'  type='email' />
-      
+      <LogForm/>
+      <SignIn/>
     </>
   )
 }
