@@ -16,6 +16,19 @@ async function createUser(firstname, lastname, username, email, password) {
     }
 };
 
+async function getUserByEmail(email) {
+    try {
+        return await prisma.user.findUnique({
+            where: {
+                email: email,
+            }
+        })
+    }catch(error) {
+        throw error;
+    }
+};
+
 module.exports = {
     createUser,
+    getUserByEmail
 };
