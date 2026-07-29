@@ -1,6 +1,7 @@
 import Input from "./Inputs";
 import styles from "../styles/Form.module.css";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 
 function LogForm() {
@@ -62,7 +63,7 @@ function LogForm() {
             </form>
             <div className={styles.links}>
                 <p>Don't have an account?</p>
-                <p>create one</p>
+                <Link className={styles.link} to="signIn">Create one</Link>
             </div>
 
         </div>

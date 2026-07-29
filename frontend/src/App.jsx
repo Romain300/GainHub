@@ -1,15 +1,18 @@
 import './App.css'
 import LogForm from './components/LogForm'
 import SignIn from './components/SignIn'
+import { Routes, Route } from 'react-router-dom'
 
 function App() {
  
 
   return (
-    <>
-      <SignIn/>
-      <LogForm />
-    </>
+    <div>
+        <Routes>
+          <Route path='/' element={ <LogForm/> }/>
+          <Route path='/signIn' element={ <SignIn/> }/>
+        </Routes>
+    </div>
   )
 }
 

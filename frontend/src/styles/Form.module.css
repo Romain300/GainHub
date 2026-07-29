@@ -27,8 +27,19 @@
 
 .links p {
     margin: 0.5rem;
-    cursor: pointer;
 }
+
+.link {
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--primary);
+    transition: var(--transition);
+}
+
+.link:hover {
+    opacity: 85%;
+}
+
 
 .errors {
     margin-bottom: 1rem;
