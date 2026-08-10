@@ -1,19 +1,28 @@
 import './App.css'
-import LogForm from './components/LogForm'
+import HomePage from './components/HomePage'
 import SignIn from './components/SignIn'
 import { Routes, Route } from 'react-router-dom'
+import AuthProvider from './components/AuthProvider'
+import NavBar from './components/NavBar'
+import Footer from './components/Footer'
 
 function App() {
  
 
   return (
-    <div>
-        <Routes>
-          <Route path='/' element={ <LogForm/> }/>
-          <Route path='/signIn' element={ <SignIn/> }/>
-        </Routes>
-    </div>
+    <AuthProvider>
+       <div className="main-container">
+        <NavBar />
+        <main className="content">
+          <Routes>
+            <Route path='/' element={ <HomePage/> }/>
+            <Route path='/signIn' element={ <SignIn/> }/>
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </AuthProvider>
   )
-}
+};
 
-export default App
+export default App;

@@ -2,6 +2,7 @@ import Input from "./Inputs";
 import styles from "../styles/Form.module.css";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import useAuth from "./useAuth";
 
 
 function LogForm() {
@@ -9,6 +10,8 @@ function LogForm() {
         email: "",
         password: ""
     });
+
+    const auth = useAuth();
 
     const [errors, setErrors] = useState([]);
 
@@ -30,6 +33,7 @@ function LogForm() {
                 return;
             }
 
+            auth.login(result.token, result.user);
             console.log("user logged In", result.user);
             
         }catch (err) {
@@ -73,4 +77,3 @@ function LogForm() {
 
 export default LogForm;
 
-//token for private route to set up
