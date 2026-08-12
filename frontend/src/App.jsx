@@ -5,10 +5,10 @@ import { Routes, Route } from 'react-router-dom'
 import AuthProvider from './components/AuthProvider'
 import NavBar from './components/NavBar'
 import Footer from './components/Footer'
+import About from './components/About'
 
 function App() {
  
-
   return (
     <AuthProvider>
        <div className="main-container">
@@ -17,6 +17,7 @@ function App() {
           <Routes>
             <Route path='/' element={ <HomePage/> }/>
             <Route path='/signIn' element={ <SignIn/> }/>
+            <Route path='/about' element={ <About/> }/>
           </Routes>
         </main>
         <Footer />

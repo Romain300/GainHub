@@ -28,7 +28,8 @@ body {
     font-family: Inter, sans-serif;
 }
 
-button {
+button,
+.button {
     padding: 0.9rem 1rem;
     background: var(--primary);
     color: white;
@@ -40,6 +41,7 @@ button {
     text-decoration: none;
 }
 
-button:hover {
+button:hover,
+.button:hover {
     opacity: 0.85;
 }
