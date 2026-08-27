@@ -56,11 +56,11 @@ function SignIn() {
                 </ul>
             )}
             <form className={styles.form} onSubmit={handleSubmit}>
-                <Input label="First Name:" type="text" id="firstname" value={form.firstname} onChange={handleChange}/>
-                <Input label="Last Name:" type="text" id="lastname" value={form.lastname} onChange={handleChange}/>
-                <Input label="Email:" type="email" id="email" value={form.email} onChange={handleChange}/>
-                <Input label="Password:" type="password" id="password" value={form.password} onChange={handleChange}/>
-                <Input label="Confirm Password:" type="password" id="cpassword" value={form.cpassword} onChange={handleChange}/>
+                <Input placeholder="First Name" label="First Name:" type="text" id="firstname" value={form.firstname} onChange={handleChange}/>
+                <Input placeholder="Last Name" label="Last Name:" type="text" id="lastname" value={form.lastname} onChange={handleChange}/>
+                <Input placeholder="Email" label="Email:" type="email" id="email" value={form.email} onChange={handleChange}/>
+                <Input placeholder="Password" label="Password:" type="password" id="password" value={form.password} onChange={handleChange}/>
+                <Input placeholder="Confirm Password" label="Confirm Password:" type="password" id="cpassword" value={form.cpassword} onChange={handleChange}/>
                 <button type="submit">Submit</button>
             </form>
         </div>

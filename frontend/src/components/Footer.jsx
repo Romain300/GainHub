@@ -10,7 +10,7 @@ function Footer() {
             <div className={styles.container}>
 
                 <div className={styles.brand}>
-                    <h3>Github</h3>
+                    <h3>Gainhub</h3>
                     <p>Track your workouts. Build your strength.</p>
                 </div>
 

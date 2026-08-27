@@ -19,6 +19,7 @@ app.get("/", (req, res) => {
 
 app.use("/signIn", routes.signIn);
 app.use("/logIn", routes.logIn);
+app.use("/exercises", routes.exercises);
 
 app.listen(PORT, () => {
     console.log(`listening on PORT${PORT}`);

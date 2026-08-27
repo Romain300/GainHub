@@ -61,8 +61,8 @@ function LogForm() {
 
             )}
             <form className={styles.form} onSubmit={handleSubmit}>
-                <Input label="Email:" type="email" id="email" value={form.email} onChange={handlechange} />
-                <Input label="Password:" type="password" id="password" value={form.password} onChange={handlechange} />
+                <Input placeholder="Email" label="Email:" type="email" id="email" value={form.email} onChange={handlechange} />
+                <Input placeholder="Password" label="Password:" type="password" id="password" value={form.password} onChange={handlechange} />
                 <button type="submit">Submit</button>
             </form>
             <div className={styles.links}>

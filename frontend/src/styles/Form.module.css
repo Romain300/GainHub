@@ -1,6 +1,6 @@
 .container {
     width: 100%;
-    max-width: 420px;
+    max-width: 650px;
     padding: 2rem;
     background: var(--surface);
     border: 1px solid var(--border);
@@ -50,4 +50,146 @@
     color: var(--danger);
     border: 1px solid var(--danger);
     list-style: none;
+}
+
+.selectExercise {
+    display: flex;
+    align-items: flex-end;
+    gap: 0.75rem;
+}
+
+.selectExercise > div {
+    flex: 1;
+}
+
+.selectExercise button {
+    height: 48px;
+    flex-shrink: 0;
+}
+
+.exerciseList {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+}
+
+.exerciseCard {
+    padding: 1rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+}
+
+.exerciseHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.exerciseName {
+    color: var(--text);
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.removeButton {
+    padding: 0.4rem 0.7rem;
+    background: transparent;
+    color: var(--danger);
+    border: 1px solid var(--danger);
+    border-radius: var(--radius);
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.removeButton:hover {
+    background: rgba(239, 68, 68, 0.1);
+    opacity: 1;
+}
+.setsContainer {
+    margin-top: 1rem;
+}
+
+.setsTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+}
+
+.setsTable th {
+    padding: 0.6rem 0.5rem;
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+}
+
+.setsTable td {
+    padding: 0.5rem;
+    color: var(--text);
+    vertical-align: middle;
+}
+
+.setsTable td:first-child {
+    width: 15%;
+    font-weight: 600;
+    color: var(--text-muted);
+}
+
+.setsTable td:nth-child(2),
+.setsTable td:nth-child(3) {
+    width: 42.5%;
+}
+
+.setsTable td > div {
+    width: 100%;
+}
+
+.setsTable td > div {
+    gap: 0;
+}
+
+.addSetButton {
+    width: 100%;
+    padding: 0.65rem;
+    background: transparent;
+    color: var(--primary);
+    border: 1px dashed var(--primary);
+    border-radius: var(--radius);
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.addSetButton:hover {
+    background: rgba(59, 130, 246, 0.1);
+    opacity: 1;
+}
+
+.removeSetButton {
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    color: var(--danger);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.removeSetButton:hover {
+    background: rgba(239, 68, 68, 0.1);
+    border-color: var(--danger);
+    opacity: 1;
 }

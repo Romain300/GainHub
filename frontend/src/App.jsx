@@ -6,6 +6,7 @@ import AuthProvider from './components/AuthProvider'
 import NavBar from './components/NavBar'
 import Footer from './components/Footer'
 import About from './components/About'
+import NewWorkout from './components/NewWorkout'
 
 function App() {
  
@@ -18,6 +19,7 @@ function App() {
             <Route path='/' element={ <HomePage/> }/>
             <Route path='/signIn' element={ <SignIn/> }/>
             <Route path='/about' element={ <About/> }/>
+            <Route path='/newworkout' element= { <NewWorkout/> }/>
           </Routes>
         </main>
         <Footer />
